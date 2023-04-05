@@ -5,11 +5,57 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>INVO Academy JS Starter with Vite</title>
+  <title>Card information</title>
 </head>
 
 <body>
+  <div class="logo-wrapper">
+    <img src="" alt="" class="logo">
+  </div>
   <div id="home-page">
+    <div class="background"></div>
+    <div class="form-container">
+      <h2 class="form-container__title">
+        Add your information
+      </h2>
+      <form>
+        <div class="form-container__ row">
+          <div class="form-container__ input-container">
+            <div class="label-wrapper">
+              <label for="">Name on card</label>
+            </div>
+            <input type="text" name="full-name">
+          </div>
+        </div>
+
+        <div class="form-container__ row">
+          <div class="form-container__ input-container">
+            <div class="label-wrapper">
+              <label for="">Card number</label>
+            </div>
+            <input type="text" name="card-number">
+          </div>
+        </div>
+        
+        <div class="form-container__ row">
+          <div class="form-container__ input-container">
+            <div class="label-wrapper">
+              <label for="">Expiry date (MM/YY)</label>
+            </div>
+            <input type="date" name="expiry-date">
+          </div>
+
+          <div class="form-container__ input-container">
+            <div class="label-wrapper">
+              <label for="">CVV</label>
+            </div>
+            <input type="text" name="cvv">
+          </div>
+        </div>
+        
+        <button type="button" class="form-container__ button"></button>
+      </form>
+    </div>
   </div>
 
   <script type="module" src="/src/global-scripts/main.js"></script>
