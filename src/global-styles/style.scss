@@ -4,5 +4,10 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  color: var(--color-primary);
+  color: var(--color-text);
+  background-color: #FFF;
+}
+
+label {
+  color: var(--color-labels);
 }
