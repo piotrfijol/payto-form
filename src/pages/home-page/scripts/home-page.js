@@ -1,4 +1,7 @@
-import '../styles/home-page.scss'
+import '../styles/home-page.scss';
+import Cleave from 'cleave.js';
+
+// Input toggle
 
 document.querySelectorAll('.input-container').forEach(input => {
     const inputField = input.querySelector('input');
@@ -19,3 +22,19 @@ document.querySelectorAll('.input-container').forEach(input => {
 
 });
 
+
+// Input validation
+
+new Cleave('input[name="card-number"]', {
+    creditCard: true
+});
+
+new Cleave('input[name="expiry-date"]', {
+    date: true,
+    datePattern: ['m', 'y']
+})
+
+new Cleave('input[name="cvv"]', {
+    numeral: true,
+    delimiter: '',
+})
